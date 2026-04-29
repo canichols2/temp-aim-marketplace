@@ -24,7 +24,7 @@
       }
     }, 
     {
-      "name": "aim-test",
+      "name": "pnnl-aim-test",
       "source": {
         "source": "github",
         "repo": "pnnl-int/aim-team-docs",
@@ -33,7 +33,7 @@
       }
     }, 
     {
-      "name": "prc3-plugin",
+      "name": "pnnl-prc3-plugin",
       "source": {
         "source": "github",
         "repo": "pnnl-int/aim-team-docs",
