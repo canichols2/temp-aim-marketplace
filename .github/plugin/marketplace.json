@@ -32,6 +32,15 @@
         "ref": "ai-plugins"
       }
     }, 
+    {
+      "name": "prc3-plugin",
+      "source": {
+        "source": "github",
+        "repo": "pnnl-int/aim-team-docs",
+        "path": "/tools/plugins/prc3-plugin", // Path does work here
+        "ref": "ai-plugins"
+      }
+    }, 
     // {
     //   "name": "pnnl-react-core-git",
     //   "source": {
