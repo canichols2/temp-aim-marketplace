@@ -5,15 +5,15 @@
     "email": "ross.lanes@pnnl.gov"
   },
   "plugins": [
-    {
-      "name": "pnnl-app-core-url",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/pnnl-int/pnnl-app-core.git",
-        "path": "/tools/pnnl-app-core-plugin", // Path, does not work with URL source, only github
-        "ref": "feature/AI-Plugin"
-      }
-    }, 
+    // {
+    //   "name": "pnnl-app-core-url",
+    //   "source": {
+    //     "source": "url",
+    //     "url": "https://github.com/pnnl-int/pnnl-app-core.git",
+    //     "path": "/tools/pnnl-app-core-plugin", // Path, does not work with URL source, only github
+    //     "ref": "feature/AI-Plugin"
+    //   }
+    // }, 
     {
       "name": "pnnl-app-core-github",
       "source": {
@@ -24,25 +24,34 @@
       }
     }, 
     {
-      "name": "pnnl-react-core-git",
+      "name": "aim-test",
       "source": {
-        "source": "git",
-        // Devops does not work. could only show up when using github shorthand/urls. 
-        // URLs may require the .git suffix. and devops repos and/or urls never showed up in the plugin search.
-        "repo": "git@ssh.dev.azure.com:v3/pnnlit/Application%20Building%20Blocks/pnnl-react",
-        "path": "/tools/prc3-plugin", 
-        "ref": "feature/AI-Plugin"
-      }
-    },
-    {
-      "name": "pnnl-app-core-git-subdir",
-      "source": {
-        "source": "git-subdir", // git-subdir does not work at all in vs-code plugins
-        "url": "https://github.com/pnnl-int/pnnl-app-core.git",
-        "path": "/tools/pnnl-app-core-plugin",
-        "ref": "feature/AI-Plugin"
+        "source": "github",
+        "repo": "pnnl-int/aim-team-docs",
+        "path": "/tools/plugins/aim-test", // Path does work here
+        "ref": "ai-plugins"
       }
     }, 
+    // {
+    //   "name": "pnnl-react-core-git",
+    //   "source": {
+    //     "source": "git",
+    //     // Devops does not work. could only show up when using github shorthand/urls. 
+    //     // URLs may require the .git suffix. and devops repos and/or urls never showed up in the plugin search.
+    //     "repo": "git@ssh.dev.azure.com:v3/pnnlit/Application%20Building%20Blocks/pnnl-react",
+    //     "path": "/tools/prc3-plugin", 
+    //     "ref": "feature/AI-Plugin"
+    //   }
+    // },
+    // {
+    //   "name": "pnnl-app-core-git-subdir",
+    //   "source": {
+    //     "source": "git-subdir", // git-subdir does not work at all in vs-code plugins
+    //     "url": "https://github.com/pnnl-int/pnnl-app-core.git",
+    //     "path": "/tools/pnnl-app-core-plugin",
+    //     "ref": "feature/AI-Plugin"
+    //   }
+    // }, 
     // Both local plugins work.
     {
       "name": "test-plugin1",
