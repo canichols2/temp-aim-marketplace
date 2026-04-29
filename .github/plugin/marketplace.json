@@ -4,6 +4,8 @@
     "name": "AIM",
     "email": "ross.lanes@pnnl.gov"
   },
+  "version": "1.0.0",
+  "description": "AIM tools and plugins for AI-assisted development.",
   "plugins": [
     // {
     //   "name": "pnnl-app-core-url",
