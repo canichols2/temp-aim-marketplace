@@ -1,0 +1,54 @@
+{
+  "name": "aim-tools",
+  "owner": {
+    "name": "AIM",
+    "email": "ross.lanes@pnnl.gov"
+  },
+  "plugins": [
+    {
+      "name": "pnnl-react-core-github",
+      "source": {
+        "source": "github",
+        "repo": "pnnl-int/pnnl-app-core",
+        // "repo": "git@ssh.dev.azure.com:v3/pnnlit/Application%20Building%20Blocks/pnnl-react",
+        "path": "/tools/prc3-plugin",
+        "ref": "feature/AI-Plugin"
+      }
+    },
+    {
+      "name": "pnnl-app-core-url1",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/pnnl-int/pnnl-app-core.git",
+        "path": "/tools/pnnl-app-core-plugin",
+        "ref": "feature/AI-Plugin"
+      }
+    }, 
+    {
+      "name": "pnnl-app-core-git-subdir",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/pnnl-int/pnnl-app-core.git",
+        "path": "/tools/pnnl-app-core-plugin",
+        "ref": "feature/AI-Plugin"
+      }
+    }, 
+    {
+      "name": "pnnl-app-core-github",
+      "source": {
+        "source": "github",
+        "repo": "pnnl-int/pnnl-app-core",
+        "path": "/tools/pnnl-app-core-plugin",
+        "ref": "feature/AI-Plugin"
+      }
+    }, 
+    {
+      "name": "test-plugin1",
+      "source": "./plugins/test-plugin1"
+    },
+    {
+      "name": "test-plugin2",
+      "source": "./plugins/test-plugin2"
+    }
+  ]
+}
